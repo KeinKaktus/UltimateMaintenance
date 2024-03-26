@@ -12,6 +12,8 @@ public class ServerPing implements Listener {
     public void onPing(ServerListPingEvent e){
         if (Messages.isActive){
             e.setMotd(Messages.motd.replaceAll("&", "§"));
+        }else{
+            e.setMotd(Messages.defaultMOTD.replaceAll("&", "§"));
         }
     }
 }
