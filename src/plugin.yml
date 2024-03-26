@@ -1,0 +1,7 @@
+name: UltimateMaintenance
+version: 1.0
+api-version: 1.13
+author: EinKaktus
+main: de.kaktus.main.Main
+commands:
+  maintenance:
