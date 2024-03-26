@@ -40,6 +40,11 @@ public class FileManager {
         }else{
             Messages.kickMsg = cfg.getString("Kick Message");
         }
+        if (cfg.getString("Default MOTD") == null){
+            cfg.set("Default MOTD", Messages.defaultMOTD);
+        }else{
+            Messages.defaultMOTD = cfg.getString("Default MOTD");
+        }
         savecfg();
     }
 
