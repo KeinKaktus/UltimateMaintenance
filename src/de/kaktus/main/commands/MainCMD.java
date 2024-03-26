@@ -23,7 +23,6 @@ public class MainCMD implements CommandExecutor {
         fm = new FileManager();
         if (p.hasPermission("maintenance.cmd")){
             if (!Messages.isActive){
-                Messages.isActive = true;
                 fm.cfg.set("is active", true);
                 fm.savecfg();
                 p.sendMessage(Messages.active.replaceAll("&", "§"));
@@ -33,7 +32,6 @@ public class MainCMD implements CommandExecutor {
                     }
                 }
             }else{
-                Messages.isActive = false;
                 fm.cfg.set("is active", false);
                 fm.savecfg();
                 p.sendMessage(Messages.deactivate.replaceAll("&", "§"));
