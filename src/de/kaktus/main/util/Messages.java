@@ -9,4 +9,8 @@ public class Messages {
     public static String kickMsg = "&cWe are currently in Maintenance!";
     public static String defaultMOTD = "&aDefault MOTD edit in config.yml";
     public static boolean isActive;
+
+    public static boolean defaultMOTDActive = true;
+
+    public static boolean mainMOTDActive = true;
 }
