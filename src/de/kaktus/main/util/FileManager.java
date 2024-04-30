@@ -45,6 +45,16 @@ public class FileManager {
         }else{
             Messages.defaultMOTD = cfg.getString("Default MOTD");
         }
+        if (cfg.getString("default MOTD active") == null){
+            cfg.set("default MOTD active", Messages.defaultMOTDActive);
+        }else{
+            Messages.defaultMOTDActive = cfg.getBoolean("default MOTD active");
+        }
+        if (cfg.getString("maintenance MOTD active") == null){
+            cfg.set("maintenance MOTD active", Messages.mainMOTDActive);
+        }else{
+            Messages.mainMOTDActive = cfg.getBoolean("maintenance MOTD active");
+        }
         savecfg();
     }
 
