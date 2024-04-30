@@ -29,7 +29,7 @@ public class Main extends JavaPlugin {
 
     @Override
     public void onDisable() {
-
+        Bukkit.getConsoleSender().sendMessage("§aUltimateMaintenance Plugin disabled successfully!");
     }
 
     public static Main getInstance() {
